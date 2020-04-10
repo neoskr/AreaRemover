@@ -30,8 +30,8 @@ class AreaRemover extends PluginBase
 		$this->getScheduler()->scheduleDelayedTask (new class($this) extends Task
 		{
 
-            public function __construct (AreaRemover $owner)
-            {
+			public function __construct (AreaRemover $owner)
+			{
 				
 				$this->owner = $owner;
 				
